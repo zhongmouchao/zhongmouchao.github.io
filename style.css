@@ -66,3 +66,12 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0;
+    color: #666;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
