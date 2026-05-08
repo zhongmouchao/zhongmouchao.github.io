@@ -68,10 +68,9 @@ a:hover {
 }
 
 .quote {
-    font-style: italic;
-    text-align: center;
-    margin: 15px 0;
+    font-style: italic !important;
+    font-size: 0.85rem;
     color: #666;
-    font-size: 0.95rem;
-    letter-spacing: 0.3px;
+    text-align: center;
+    margin: 10px 0 15px 0;
 }
