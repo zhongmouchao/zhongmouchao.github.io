@@ -8,30 +8,56 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main class="page">
-      <header class="intro">
-        <h1>Zhongmou Chao</h1>
-        <p class="role">Schmidt AI in Science Postdoctoral Fellow at Cornell University</p>
-        <p>
-          I develop machine learning models and bioelectronic platforms to
-          understand and make use of protein functions.
-        </p>
-        <p>
-          I work with <a href="https://daniel.cbe.cornell.edu/">Daniel Lab</a>
-          and <a href="https://people.orie.cornell.edu/pfrazier/">Frazier Lab</a>.
-          I graduated from the University of Pittsburgh, where I worked with
-          <a href="https://www.fullertonlab.pitt.edu/">Prof. Fullerton</a>.
-        </p>
-        <nav class="top-links" aria-label="Primary links">
-          <a href="26zc0507_CV_public.pdf" target="_blank" rel="noreferrer">CV</a>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=qKPkZWYAAAAJ">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/zhongmou-chao-8887517b/">LinkedIn</a>
-          <a href="https://github.com/zhongmouchao">GitHub</a>
-        </nav>
-      </header>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zhongmou Chao home">
+        <span class="brand-mark">ZC</span>
+        <span>Zhongmou Chao</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
 
-      <section aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Schmidt AI in Science Postdoctoral Fellow</p>
+          <h1 id="hero-title">Zhongmou Chao</h1>
+          <p class="intro">
+            I develop machine learning models and bioelectronic platforms to
+            understand and make use of protein functions.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="26zc0507_CV_public.pdf" target="_blank" rel="noreferrer">View CV</a>
+            <a class="button secondary" href="https://scholar.google.com/citations?hl=en&amp;user=qKPkZWYAAAAJ">Google Scholar</a>
+          </div>
+        </div>
+
+        <aside class="affiliation-card" aria-label="Affiliations">
+          <p class="card-label">Currently at Cornell University</p>
+          <a href="https://daniel.cbe.cornell.edu/">Daniel Lab</a>
+          <a href="https://people.orie.cornell.edu/pfrazier/">Frazier Lab</a>
+          <span class="card-divider"></span>
+          <p>
+            Previously at the University of Pittsburgh with
+            <a href="https://www.fullertonlab.pitt.edu/">Prof. Fullerton</a>.
+          </p>
+        </aside>
+      </section>
+
+      <section class="statement" aria-label="Research statement">
+        <p>
+          “To exist is to have function; not to exist does not mean no purpose.”
+        </p>
+      </section>
+
+      <section class="section two-column" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">AI, proteins, and bioelectronic systems.</h2>
+        </div>
         <p>
           My work sits at the intersection of machine learning, protein
           function, and experimental platforms. I am interested in practical
@@ -40,22 +66,52 @@
         </p>
       </section>
 
-      <section aria-labelledby="research-title">
-        <h2 id="research-title">Research interests</h2>
-        <ul class="research-list">
-          <li>Protein function prediction with biased training data</li>
-          <li>
-            <a href="https://www.nature.com/articles/s41467-024-49415-6">Protein function characterization</a>
-          </li>
-          <li>
-            <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202528703">Bioelectronics</a>
-          </li>
-        </ul>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research interests</p>
+          <h2 id="research-title">Current Focus</h2>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span>01</span>
+            <h3>Biased Training Data</h3>
+            <p>Protein function prediction methods that account for uneven and incomplete observations.</p>
+          </article>
+          <article class="research-card">
+            <span>02</span>
+            <h3>Protein Characterization</h3>
+            <p>
+              Experimental and computational approaches for interpreting protein
+              function.
+            </p>
+            <a href="https://www.nature.com/articles/s41467-024-49415-6">Read paper</a>
+          </article>
+          <article class="research-card">
+            <span>03</span>
+            <h3>Bioelectronics</h3>
+            <p>Platforms that connect biological function with measurable electronic signals.</p>
+            <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202528703">Read paper</a>
+          </article>
+        </div>
       </section>
 
-      <blockquote>
-        “To exist is to have function; not to exist does not mean no purpose.”
-      </blockquote>
+      <section class="section links-section" id="links" aria-labelledby="links-title">
+        <div>
+          <p class="eyebrow">Links</p>
+          <h2 id="links-title">Find Me Online</h2>
+        </div>
+        <div class="link-list">
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=qKPkZWYAAAAJ">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/zhongmou-chao-8887517b/">LinkedIn</a>
+          <a href="https://github.com/zhongmouchao">GitHub</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Zhongmou Chao</span>
+      <a href="#top">Back to top</a>
+    </footer>
   </body>
 </html>
