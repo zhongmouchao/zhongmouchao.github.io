@@ -17,3 +17,9 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
 }
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Hide temporary conference announcements after their scheduled end date.
+document.querySelectorAll('[data-conference-end]').forEach((section) => {
+  const endDate = new Date(section.dataset.conferenceEnd);
+  if (Date.now() >= endDate.getTime()) section.hidden = true;
+});
